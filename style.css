@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    background: #555;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+h2 {
+    color: white;
+    font-size: 3vw;
+}
+
+main h1 {
+    font-size: 10vw;
+    filter: saturate(0%);
+}
+
+
+@media (max-width: 800px) {
+    main {
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+    
+    main h1 {
+        font-size: 12vw;
+        filter: saturate(0%);
+    }
+}
